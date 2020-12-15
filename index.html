@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Home </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<!-- bootstrap style sheet link -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<!-- adds a favicon to the page -->
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<!-- used fonts from google throught out the website -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oxygen&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- nav bar -->
+		<!-- code gotten from bootstrap, customised to include own links and changed font and colour -->
+		<div class="row justify-content-center navCustomColor">
+			
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link custom-link" href="index.html">Home </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link custom-link" href="contact.html">Contact Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link custom-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link custom-link" href="#">Minigame</a>
+				</li>
+			</ul>
+			
+			<form class="form-inline my-2 my-lg-0">
+				 <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+				 <button class="btn btn-dark my-2 my-sm-0 button-font" type="submit">Search</button>
+			</form>
+		</div>
+		    
+		
+		<!-- jumbotron code gotten from bootstrap website, content changed to include logo and details, colour and font also customised -->
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center logo">
+						<img src="tempLogo.jpg" alt="logo">
+					</div>
+					<div class="col text-center">
+						<h1 class="display-4"> JIT Pub </h1>
+						<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- main text section -->
+		<div class="container-fluid mainTextColor"> <!-- spreads it accross the entire width of the page -->
+			<div class="container text-center">
+				<!-- row containing 3 columns of content -->
+				<div class="row">
+					<!-- column 1 -->
+					<div class="col-md-4"> 
+						<h2> Latest Updates </h2>
+						<p> Due to the latest Covid 19 restrictions we plan to reopen in line with Government advice on the 4th of December </p>
+						<p> We are working in accordance to the Governments safety guidelines with new percautions in place to ensure the health of our cutsomers and our staff </p>
+						<p> We ask that all customers please keep to social distancing and wear face coverings when possible </p>
+						
+						<p> To see the Governments latest Covid-19 guidelines: </p>
+						<a class="btn btn-outline-light button-font" href="https://www.gov.ie/en/campaigns/c36c85-covid-19-coronavirus/">Click Here </a> 
+					</div>
+					
+					<!-- column 2 -->
+					<div class="col-md-4">
+						<h2> About us </h2>
+							<p> A pub renowned for its friendly staff and customers. Its an amazing atmosphere with a wide selection of drinks.</p>
+							<p> Whether you’re spending the day shopping or viewing some of our famous landmarks we're easy reach to wherever you’re staying. </p>
+							<p>  Our bar has 50 beers on tap including several imported continental and American beers. We also have a large selection of Irish Craft beers and whiskey.  </p>
+							
+							<p> View our menu: </p>
+							<a class="btn btn-outline-light button-font" href="#"> Menu </a>
+					</div>
+					
+					<!-- column 3 -->
+					<div class="col-md-4">
+						<h2> Weekly Events </h2>
+							<h6> <u> Happy Hour </u> </h6>
+								<p> Mon - Fri <p>
+								<p> 5PM - 7PM </p>
+							<h6> <u> Karaoke Night </u> </h6>
+								<p> Fri - Sun </p>
+								<p> 8PM - 11PM </p>
+							<h6> <u> Pub Quiz </u> </h6>
+								<p> Sat </p>
+								<p> 7PM - 8PM </p>
+							<a class="btn btn-outline-light button-font" href="#"> Click here to make a reservation </a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="container-fluid break"> </div> <!-- to seperate sections -->
+		
+
+		
+		
+		<!-- footer in a container taken from bootstrap with customised font and colours --> 
+		<footer class="container-fluid text-center"> <!-- fluid spreads it accross the entire width of the page -->
+			<!-- row containing 3 columns of content -->
+			<div class="row">
+				
+				<!-- column 1 -->
+				<div class="col-md-4">
+					<h5> Useful Links </h5>
+					<ul class="footerLinks">
+						<li> <a class="custom-link" href="index.html"> Home </a> </li>
+						<li> <a class="custom-link" href="contact.html"> Contact Us </a> </li>
+						<li> <a class="custom-link" href="gallery.html"> Gallery </a> </li>
+						<li> <a class="custom-link" href="#"> Minigame </a> </li>
+						<li> <a class="custom-link" href="#"> Help </a> </li>
+						<li> <a class="custom-link" href="#"> FAQs </a> </li>
+					</ul>
+				</div>
+					
+				<!-- column 1 -->
+				<div class="col-md-4"> 
+					<h5> Address </h5>
+					<p> 48, Temple Bar, Dublin 2, D02 N725 </p>
+					<p> P: (123) 456-7890 </p>
+				</div>
+				
+				<!-- column 1 -->
+				<div class="col-md-4">
+					<h5> Opening Hours </h5>
+					<p> <u> Mon, Tue, Wed, Thur </u> </p>
+					<p> 10:30 AM - 11:30 PM </p>
+					<p> <u> Fri, Sat, Sun </u> </p>
+					<p> 10:00 AM - 1:00 PM </p>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col">
+					<p> &copy; Group I project 2020 </p>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- bootsrtap javascript link -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
