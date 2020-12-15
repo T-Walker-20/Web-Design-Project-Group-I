@@ -1,21 +1,23 @@
 
 .break{ /* used to separate the sections */
 	height: 50px;
+	background-color: #4C0813; /* changes the colour of the break used to add space between sections */
 }
 
 
 
-/* fonts */
 p{
 	font-family: 'Oxygen', sans-serif;
+	color: white;
 }
 
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: bold;
+	color: #D3434D;
 }
 
-/* nav and footer links and buttons */
+/* nav and footer links customised */
 .custom-link{
 	color: white;	
 	font-family: 'Oxygen', sans-serif;
@@ -26,71 +28,46 @@ h1, h2, h3, h4, h5, h6{
 	text-decoration: none;
 }
 
-.button-font{
+.button-font{ /* changes the font for buttons on the page */
 	font-family: 'Oxygen', sans-serif;
 }
-
-.customButton{
-	font-family: 'Oxygen', sans-serif;
-	background-color: black;
-}
-
-/* colors */
-.navCustomColor{
-	background-color: #AE2130;
-	padding: 10px;
-}
-
-.mainTextColor{
-	background-color: #4C0813;
-	padding: 20px;
-}
-
-p{
-	color: white;
-}
-
-h1, h2, h3, h4, h5, h6{
-	color: #D3434D;
-}
-
-.jumbotron.jumbotron-fluid{
-	background-color: #F5AC8C;
-	margin-bottom: 0px;
-}
-
-footer{
-	background-color: black;
-}
-
-.break{
-	background-color: #4C0813;
-}
-
-.headerCustomColor{
-	background-color: #F5AC8C;
-	padding: 50px;
-}
-
-.galleryCustomColor{
-	background-color: #4C0813;
-}
-
 
 /* footer */
-.footerLinks{
+.footerLinks{ /* specifically removes styling on list format in footer links  */
 	list-style-type: none;
 	padding: 0;
-
 }
 
 footer{
 	padding-top: 15px;
+	background-color: black;
 }
 
 
-/* home page */
-.logo{
+
+.navCustomColor{ /* changes the colour of the nav bar and adds padding */
+	background-color: #AE2130;
+	padding: 10px;
+}
+
+.mainTextColor{  /* changes colour of text in the main text section */
+	background-color: #4C0813;
+	padding: 20px;
+	color: white;
+}
+
+
+.jumbotron.jumbotron-fluid{ /* changes the colour of the jumbotron */
+	background-color: #F5AC8C;
+	margin-bottom: 0px; /* removes unnecessary space below the jumbotron */
+}
+
+
+
+
+
+
+.logo{ /* centers logo, keeps it in center of column when page is scaled down */
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -101,14 +78,25 @@ footer{
 	padding: 20px;
 }
 
-/* gallery */
-.largeImg{
+
+
+.headerCustomColor{ /* changes colour of header on gallery page */
+	background-color: #F5AC8C;
+	padding: 50px;
+}
+
+.galleryCustomColor{ /* changes colour of background of gallery */
+	background-color: #4C0813;
+}
+
+.largeImg{ /* centers main image, keeps it in center of column when page is scaled down */
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+/* image styling */
 .one{
 	height: 150px;
 	width: 160px;
@@ -138,7 +126,7 @@ footer{
 	cursor: pointer;
 }
 
-
+/* image hover styling */
 .one:hover{
 	opacity: 0.5;
 	transform: scale(0.9);
