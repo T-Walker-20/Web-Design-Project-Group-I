@@ -1,10 +1,7 @@
-
 .break{ /* used to separate the sections */
 	height: 50px;
 	background-color: #4C0813; /* changes the colour of the break used to add space between sections */
 }
-
-
 
 p{
 	font-family: 'Oxygen', sans-serif;
@@ -43,8 +40,6 @@ footer{
 	background-color: black;
 }
 
-
-
 .navCustomColor{ /* changes the colour of the nav bar and adds padding */
 	background-color: #AE2130;
 	padding: 10px;
@@ -56,16 +51,10 @@ footer{
 	color: white;
 }
 
-
 .jumbotron.jumbotron-fluid{ /* changes the colour of the jumbotron */
 	background-color: #F5AC8C;
 	margin-bottom: 0px; /* removes unnecessary space below the jumbotron */
 }
-
-
-
-
-
 
 .logo{ /* centers logo, keeps it in center of column when page is scaled down */
 	text-align: center;
@@ -145,13 +134,21 @@ footer{
 	transform: scale(0.9);
 }
 
+/* @reference https://www.educative.io/blog/javascript-snake-game-tutorial */
+/* changed the size of the score font */
+#snakeboard{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 10px solid #4c0813
+}
 
+#score{
+    text-align: center;
+    font-size: 75px;
+}
 
-
-
-
-
-
-
-
-
+#para{
+	text-align: right;
+}
