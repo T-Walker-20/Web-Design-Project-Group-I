@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+        <!-- adds a favicon to the page -->
+		<link rel="icon" href="logo.jpg" type="image/x-icon"/>
+
+        <!-- used fonts from google throughout the website -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oxygen&display=swap" rel="stylesheet">
+
+        <!-- link to our style sheet that will help manipulate colors etc. -->
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+		<!-- code gotten from bootstrap, customised to include own links and changed font and colour -->
+		<div class="row justify-content-center navCustomColor">
+
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link custom-link" href="index.html">Home </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link custom-link" href="contact.html">Contact Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link custom-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link custom-link" href="Snake2.html">Minigame</a>
+				</li>
+			</ul>
+
+			<form class="form-inline my-2 my-lg-0">
+				 <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+				 <button class="btn btn-dark my-2 my-sm-0 button-font" type="submit">Search</button>
+			</form>
+		</div>
+
+
+        <!-- Code for heading and paragraph below gotten from https://mdbootstrap.com/docs/jquery/forms/contact/ and changed to display our message -->
+        <!-- Centered title to tell user the page they are on -->
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="h1-responsive font-weight-bold text-center my-4">Contact us</h1>
+            <!-- Paragraph to tell user what to use the form for -->
+            <p class="text-center w-responsive mx-auto mb-5">If you have any Questions or Queries for us please don't hestiate to fill out the form below, one of our staff will be happy to help in any way they can.</p>
+        </div>
+        <!-- Contact Form gotten from Bootstrap website, changed slighlty to give the CA requirements -->
+        <form id="myForm" class="center-block text-center mainTextColor">
+            <!-- Class to set up the row for the users name and phone number -->
+            <div class="form-row">
+                <!-- Various classes to center the columns -->
+                <div class="col-md-12 d-flex justify-content-center mx-auto offset-md-0 row text-center">
+                    <!-- Class to set up name as column with a size of 4 -->
+                    <div class="form-group col-md-4">
+                        <!-- Setup the input form for name including the placeholder, type, etc -->
+                        <label for="inputName4">Name</label>
+                        <input type="text" class="form-control" id="inputName4" placeholder="John Doe">
+                    </div>
+                    <!-- Class to set up phone as column with a size of 4 -->
+                    <div class="form-group col-md-4">
+                        <!-- Setup the input form for phone including the placeholder, type, etc -->
+                        <label for="inputPhone4">Phone</label>
+                        <input type="tel" class="form-control" id="inputPhone4" maxlength="9" placeholder="08XXXXXXXX">
+                    </div>
+                </div>
+            </div>
+            <!-- Class to set up the row for the users email -->
+            <div class="form-row">
+                <!-- class to center the from box and also set size to 8 -->
+                <div class="form-group col-md-8 mx-auto">
+                    <!-- Setup the input form for email including the placeholder, type, etc -->
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="example@example.com">
+                </div>
+            </div>
+            <!-- setup class for new row of information and code -->
+            <div class="form-row">
+                <!-- Various classes to center the columns -->
+                <div class="col-md-12 d-flex justify-content-center mx-auto offset-md-0 row text-center">
+                    <!-- Class to set up Reason for Contact as column with a size of 4 -->
+                    <div class="form-group col-md-4">
+                        <!-- Setup the input form with dropdown menu for reason of contact including the placeholder, type, multiple options, etc. -->
+                        <label for="inputReason">Reason for Contact</label>
+                        <select id="inputReason" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Comment</option>
+                            <option>Query</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <!-- Class to set up Other as column with a size of 4 -->
+                    <div class="form-group col-md-4">
+                        <!-- setup input form for the "other" reason selection -->
+                        <label for="inputOther">Other</label>
+                        <input type="text" class="form-control" id="inputOther">
+                    </div>
+                </div>
+            </div>
+            <!-- setup class for new row -->
+            <div class="form-row">
+                <!-- classes to set the column size as 8 and center it -->
+                <div class="form-group col-md-8 mx-auto">
+                    <!-- input form of type text area to allow users to enter their comments or queries -->
+                    <label for="validationTextarea">Message</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Please enter your message here."></textarea>
+                </div>
+            </div>
+            <!-- a submit button to allow users to submit the form, button calls function to submit -->
+            <input type="button" onclick="myFunction()" value="Submit form">
+            <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+        </form>
+        <div class="jumbotron jumbotron-fluid">
+            <!-- paragraph to display our information -->
+            <p class="text-center w-responsive mx-auto mb-5">Alternatively you can call or email us directly using the following information.</p>
+
+            <!-- Code for details below gotten from https://mdbootstrap.com/docs/jquery/forms/contact/ -->
+            <!-- class to setup the information as a container and center it -->
+            <div class="container align-center">
+                <!-- class sets up the information in a size 12 column -->
+                <div class="col-md-12 text-center">
+                    <!-- setup a list of the information -->
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p class="text-center w-responsive mx-auto mb-5">JIT PUB, 48, Temple Bar, Dublin 2, D02 N725</p>
+                        </li>
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p class="text-center w-responsive mx-auto mb-5">P: (123) 456-7890</p>
+                        </li>
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p class="text-center w-responsive mx-auto mb-5">jitpub@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- footer in a container taken from bootstrap with customised font and colours -->
+		<footer class="container-fluid text-center"> <!-- fluid spreads it accross the entire width of the page -->
+			<!-- row containing 3 columns of content -->
+			<div class="row">
+
+				<!-- column 1 -->
+				<div class="col-md-4">
+					<h5> Useful Links </h5>
+					<ul class="footerLinks">
+						<li> <a class="custom-link" href="index.html"> Home </a> </li>
+						<li> <a class="custom-link" href="contact.html"> Contact Us </a> </li>
+						<li> <a class="custom-link" href="gallery.html"> Gallery </a> </li>
+						<li> <a class="custom-link" href="Snake2.html"> Minigame </a> </li>
+						<li> <a class="custom-link" href="#"> Help </a> </li>
+						<li> <a class="custom-link" href="#"> FAQs </a> </li>
+					</ul>
+				</div>
+
+				<!-- column 1 -->
+				<div class="col-md-4">
+					<h5> Address </h5>
+					<p> 48, Temple Bar, Dublin 2, D02 N725 </p>
+					<p> P: (123) 456-7890 </p>
+				</div>
+
+				<!-- column 1 -->
+				<div class="col-md-4">
+					<h5> Opening Hours </h5>
+					<p> <u> Mon, Tue, Wed, Thur </u> </p>
+					<p> 10:30 AM - 11:30 PM </p>
+					<p> <u> Fri, Sat, Sun </u> </p>
+					<p> 10:00 AM - 1:00 PM </p>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col">
+					<p> &copy; Group I project 2020 </p>
+				</div>
+			</div>
+		</footer>
+
+        <!-- submit function from https://www.w3schools.com/jsref/met_form_submit.asp allows the form to be "submitted" -->
+        <script>
+            function myFunction() {
+                document.getElementById("myForm").submit();
+                //confirm box will pop up asking user if they are sure they want to submit -->
+                confirm("You are about to submit the Form, please check all details are correct.");
+                alert("Thank you for your submission, we will reply as soon as possible.");
+            }//end funtion
+        </script>
+
+        <!-- Script tags gotten from Bootstrap Containing links to Bootstrap JS and Popper -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    </body>
+</html>
